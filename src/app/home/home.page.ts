@@ -6,7 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
+  darkMode: boolean =true
   constructor() {}
+
+
+
+onchange() {
+
+  this.darkMode=!this.darkMode;
+  document.body.classList.toggle('dark');
+}
 
 }
